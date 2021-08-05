@@ -2,13 +2,11 @@ const { MessageEmbed } = require('discord.js');
 const db = require('old-wio.db');
 
 module.exports = {
-    config: {
         name: "setnick",
         aliases: ["sn", 'nick'],
-        category: "mod",
+        category: "🚫Mod",
         description: "Sets Or Changes Nickname Of An User",
         usage: "[mention | name | nickname | ID] <nickname>",
-    },
     run: async (bot, message, args) => {
         if (!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send("**You Dont Have Permissions To Change Nickname! - [MANAGE_GUILD]**");
 

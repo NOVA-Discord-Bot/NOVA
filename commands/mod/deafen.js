@@ -1,16 +1,11 @@
 const { owner } = require("../../config.json")
 
 module.exports = {
-    config: {
-    
         name: "deafen",
         category: '🚫Mod',
         description: "Deafen a member in a voice channel",
         usage: "deafen <user>",
-        aliases: ["deaf"]
-       
-    },
-
+        aliases: ["deaf"],
     run: async(bot, message, args) => {
          if (!message.member.hasPermission("DEAFEN_MEMBERS") && !ownerID .includes(message.author.id)) return message.channel.send("**You Dont Have The Permissions To Ban Users! - [DEAFEN_MEMBERS]**");
         
