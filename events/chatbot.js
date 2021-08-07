@@ -1,6 +1,6 @@
 const client = require('../index')
 const fetch = require('node-fetch')
-const chatbotChannelId = '850586318194737182';
+const chatbotChannelId = '873051880849276948';
 
 client.on("message", async msg => {
 if(msg.channel.id === chatbotChannelId){

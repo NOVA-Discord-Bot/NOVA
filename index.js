@@ -5,8 +5,7 @@ const {
 const client = new Client({
   disableEveryone: true
 });
-const disbut = require("discord-buttons");
-disbut(client);
+require('discord-buttons')(client);
 module.exports = client;
 const Enmap = require("enmap");
 const canvacord = require("canvacord");
@@ -51,6 +50,4 @@ client.categories = fs.readdirSync("./commands/");
 ["command"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
-
-client.login(process.env.TOKEN
-);
+client.login(process.env.TOKEN);
